@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqüae - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lily+Script+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="site-wrapper">
+        <header class="header py-2 sticky-top shadow-sm">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-4 d-none d-md-flex gap-4 align-items-center">
+                        <a href="index.html" class="nav-link-custom text-decoration-none text-dark">Inicio</a>
+                        <a href="productos.html" class="nav-link-custom text-decoration-none text-dark">Productos</a>
+                        <a href="Nosotros.html" class="nav-link-custom text-decoration-none text-dark">Nosotros</a>
+                        <a href="Donación.html" class="nav-link-custom text-decoration-none text-dark">Donación</a>
+                    </div>
+
+                    <div class="col-12 col-md-4 text-center">
+                        <h1 class="titulo display-5 m-0">Aqüae</h1>
+                    </div>
+                     <div class="col-4 d-none d-md-flex justify-content-end align-items-center gap-4 iconos-header">
+                        <a href="carrito.html" class="icono-header carrito-header" title="Carrito">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <path d="M15 18L13 38H35L33 18" stroke="#777" stroke-width="1.5"/>
+                                <path d="M19 18C19 13 21 10 24 10C27 10 29 13 29 18" stroke="#777" stroke-width="1.5"/>
+                                <path d="M14 23C10 22 8 25 10 28C11 30 13 29 15 27" stroke="#ED9CBD" stroke-width="1.5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row d-md-none text-center mt-2 pt-2 border-top border-light">
+                    <div class="col-3"><a href="index.html" class="nav-link-custom text-decoration-none text-dark">Inicio</a></div>
+                    <div class="col-3"><a href="productos.html" class="nav-link-custom text-decoration-none text-dark">Productos</a></div>
+                    <div class="col-3"><a href="Nosotros.html" class="nav-link-custom text-decoration-none text-dark">Nosotros</a></div>
+                    <div class="col-3"><a href="Donación.html" class="nav-link-custom text-decoration-none text-dark">Donación</a></div>
+                </div>
+            </div>
+        </header>
+       <div class="container my-4">
+           <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+            <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+                <div class="container-fluid px-4">
+                    <div class="carousel-item active">
+                        <img src="img/Banner 1.png" class="d-block w-100" alt="Banner 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner carrusel 2.png" class="d-block w-100" alt="Banner 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner carrusel 3.png" class="d-block w-100" alt="Banner 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="inicio">
+        <main class="container my-5 text-dark">
+            <section id="productos" class="my-5 fotos">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6">
+                        <img src="img/crema-detalle.png" class="img-fluid rounded shadow-sm w-100" alt="Crema Hidratante Aqüae">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/ingredientes.png" class="img-fluid rounded shadow-sm w-100" alt="Ingredientes Naturales">
+                    </div>
+                </div>
+            </section>
+
+            <section class="my-5 fotos">
+                <h3 class="text-center fw-bold mb-4 text-dark">Sobre Nosotros</h3>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <img src="img/romero.jpe" class="img-fluid rounded shadow-sm object-fit-cover w-100" style="height: 350px;" alt="Romero Natural">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/arroz.jpe" class="img-fluid rounded shadow-sm object-fit-cover w-100" style="height: 350px;" alt="Extracto de Arroz">
+                    </div>
+                </div>
+            </section>
+
+            <section id="nosotros" class="my-5 fotos">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <h3 class="fw-bold mb-3" style="color: var(--color-verde-fondo);">Conoce más sobre Aqüae</h3>
+                        <div class="ratio ratio-16x9 shadow-sm rounded overflow-hidden">
+                            <video controls autoplay muted loop class="w-100 h-100 object-fit-cover">
+                                <source src="img/aquae fotos - copia/crema/video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/compromiso.jpe" class="img-fluid rounded shadow-sm w-100" alt="Nuestro Compromiso Ambiental">
+                    </div>
+                </div>
+            </section>
+
+            <section id="valores" class="my-5 fotos">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="img/valores.jpe" class="img-fluid rounded shadow-sm w-100" alt="Valores Aqüae">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer-aquae pt-5 pb-3 border-top mt-5">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="footer-brand mb-2">Aqüae</h5>
+                        <p class="text-muted-custom">
+                            Belleza natural, piel consciente. Creado con ingredientes botánicos para brindarte una hidratación pura y sostenible.
+                        </p>
+                        <div class="d-flex gap-3 mt-3">
+                            <a href="https://www.instagram.com/aquaecosmetics?stkn=b3loeDdoMjdtcGRj&utm_source=qr" class="social-icon" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8" />
+                                    <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                                    <path d="M16.5 7.5v.01" />
+                                </svg>
+                            </a>
+                            <a href="https://www.tiktok.com/@aquaecosmetics?is_from_webapp=1&sender_device=pc" class="social-icon" aria-label="TikTok">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917" />
+                                </svg>
+                            </a>
+                            <a href="https://wa.me/3204483562" class="social-icon" aria-label="WhatsApp">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                                    <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="footer-heading">Navegación</h5>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="index.html" class="nav-link-custom text-decoration-none text-dark">Inicio</a></li>
+                            <li><a href="productos.html" class="nav-link-custom text-decoration-none text-dark">Productos</a></li>
+                            <li><a href="Donación.html" class="nav-link-custom text-decoration-none text-dark">Donación</a></li>
+                            <li><a href="Nosotros.html" class="nav-link-custom text-decoration-none text-dark">Sobre Nosotros</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="footer-heading">Ayuda</h5>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="Preguntas.html" class="nav-link-custom text-decoration-none text-dark">Preguntas Frecuentes</a></li>
+                            <li><a href="Envio.html" class="nav-link-custom text-decoration-none text-dark">Envíos</a></li>
+                            <li><a href="Tyc.html" class="nav-link-custom text-decoration-none text-dark">Términos y condiciones</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr class="mt-5 mb-3 footer-divider">
+
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-12 text-center d-flex align-items-center justify-content-center gap-2">
+                        <span class="small text-muted-custom">&copy; 2026 Aqüae. Todos los derechos reservados.</span>
+                        <span class="small text-muted-custom">| Cuidado consciente para tu piel</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#777" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 10a6 6 0 0 0 -6 -6h-3v2a6 6 0 0 0 6 6h3" />
+                            <path d="M12 14a6 6 0 0 1 6 -6h3v1a6 6 0 0 1 -6 6h-3" />
+                            <path d="M12 20l0 -10" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
