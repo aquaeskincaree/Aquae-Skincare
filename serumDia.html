@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqüae - Sérum Facial Hidratante Día</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lily+Script+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header py-2 sticky-top shadow-sm">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-4 d-none d-md-flex gap-4 align-items-center">
+                    <a href="index.html" class="nav-link-custom text-decoration-none text-dark">Inicio</a>
+                    <a href="productos.html" class="nav-link-custom text-decoration-none text-dark">Productos</a>
+                    <a href="Nosotros.html" class="nav-link-custom text-decoration-none text-dark">Nosotros</a>
+                    <a href="Donación.html" class="nav-link-custom text-decoration-none text-dark">Donación</a>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <h1 class="titulo display-5">Aqüae</h1>
+                </div>
+                <div class="col-4 d-none d-md-flex justify-content-end align-items-center gap-4 iconos-header">
+                    <a href="../carrito.html" class="icono-header carrito-header position-relative" title="Carrito">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M15 18L13 38H35L33 18" stroke="#777" stroke-width="1.5"/>
+                            <path d="M19 18C19 13 21 10 24 10C27 10 29 13 29 18" stroke="#777" stroke-width="1.5"/>
+                            <path d="M14 23C10 22 8 25 10 28C11 30 13 29 15 27" stroke="#ED9CBD" stroke-width="1.5"/>
+                        </svg>
+                        <span id="cart-count" class="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb mb-0 small text-muted">
+                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-dark">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="productos.html" class="text-decoration-none text-dark">Productos</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Sérum Facial Hidratante Día</li>
+            </ol>
+        </nav>
+
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <div id="carouselSerum" class="carousel slide carrusel-producto" data-bs-ride="carousel" data-bs-interval="3500">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselSerum" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+                        <button type="button" data-bs-target="#carouselSerum" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+                        <button type="button" data-bs-target="#carouselSerum" data-bs-slide-to="2" aria-label="Imagen 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/aquae fotos - copia/serumdía/1.jpeg" class="d-block" alt="Sérum facial - imagen 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/aquae fotos - copia/serumdía/2.jpeg" class="d-block" alt="Sérum facial - imagen 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/aquae fotos - copia/serumdía/3.jpeg" class="d-block" alt="Sérum facial - imagen 3">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSerum" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselSerum" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <span class="badge bg-secondary mb-2">Natural</span>
+                <h2 class="fw-bold mb-3 titulo-producto">Sérum Facial Hidratante Día</h2>
+                <div class="fs-4 fw-bold mb-4 precio-producto">$40.000 COP</div>
+                <p class="text-muted mb-4">
+                    Fórmula ligera que hidrata profundamente y deja la piel suave, fresca y radiante. Diseñado con ingredientes botánicos puros ideales para el uso diario en todo tipo de piel.
+                </p>
+
+                <div class="d-grid gap-2">
+                    <button class="btn btn-submit btn-add-cart py-3 fw-bold"
+                            data-id="1"
+                            data-title="Serum Facial Hidratante Día"
+                            data-price="40000"
+                            data-img="img/aquae fotos - copia/serumdía/1.jpeg">
+                        AÑADIR AL CARRITO
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="container my-5 pt-4 border-top">
+        <h3 class="fw-bold mb-4 text-center titulo-producto">Completa tu rutina botánica</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="product-card shadow-sm p-3 bg-white h-100 d-flex flex-column">
+                    <a href="shampoo.html" class="text-decoration-none text-dark d-block">
+                        <img src="img/aquae fotos - copia/shampoo/1.jpeg" alt="Shampoo de romero" class="img-fluid rounded mb-3 img-producto-card">
+                        <div class="product-info">
+                            <div class="product-subtitle text-muted-custom">Shampoo de romero</div>
+                            <h6 class="fw-bold my-2 text-dark">Shampoo de romero</h6>
+                            <div class="product-price fw-bold">$35.000 COP</div>
+                        </div>
+                    </a>
+                    <button class="btn btn-submit btn-add-cart mt-auto" 
+                            data-id="2" 
+                            data-title="Shampoo de romero" 
+                            data-price="35000" 
+                            data-img="img/aquae fotos - copia/shampoo/1.jpeg">
+                        AÑADIR AL CARRITO
+                    </button>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="product-card shadow-sm p-3 bg-white h-100 d-flex flex-column">
+                    <a href="Contorno.html" class="text-decoration-none text-dark d-block">
+                        <img src="img/aquae fotos - copia/contorno/1.jpeg" alt="Contorno de ojos" class="img-fluid rounded mb-3 img-producto-card">
+                        <div class="product-info">
+                            <div class="product-subtitle text-muted-custom">Contorno de ojos</div>
+                            <h6 class="fw-bold my-2 text-dark">Contorno de ojos</h6>
+                            <div class="product-price fw-bold">$28.000 COP</div>
+                        </div>
+                    </a>
+                    <button class="btn btn-submit btn-add-cart mt-auto" 
+                            data-id="3" 
+                            data-title="Contorno de ojos" 
+                            data-price="28000" 
+                            data-img="img/aquae fotos - copia/contorno/1.jpeg">
+                        AÑADIR AL CARRITO
+                    </button>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="product-card shadow-sm p-3 bg-white h-100 d-flex flex-column">
+                    <a href="Exfoliante.html" class="text-decoration-none text-dark d-block">
+                        <img src="img/aquae fotos - copia/exfoliante/cerca 1.jpeg" alt="Exfoliante facial" class="img-fluid rounded mb-3 img-producto-card">
+                        <div class="product-info">
+                            <div class="product-subtitle text-muted-custom">Exfoliante facial</div>
+                            <h6 class="fw-bold my-2 text-dark">Exfoliante facial nutritivo de avena</h6>
+                            <div class="product-price fw-bold">$36.000 COP</div>
+                        </div>
+                    </a>
+                    <button class="btn btn-submit btn-add-cart mt-auto" 
+                            data-id="4" 
+                            data-title="Exfoliante facial nutritivo de avena" 
+                            data-price="36000" 
+                            data-img="img/aquae fotos - copia/exfoliante/cerca 1.jpeg">
+                        AÑADIR AL CARRITO
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-aquae pt-5 pb-3 border-top mt-5">
+        <div class="container text-center">
+            <p class="small text-muted-custom">&copy; 2026 Aqüae. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

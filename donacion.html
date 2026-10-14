@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqüae - Donaciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lily+Script+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="site-wrapper">
+        <header class="header py-2 sticky-top shadow-sm">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-4 d-none d-md-flex gap-4 align-items-center">
+                        <a href="index.html" class="nav-link-custom text-decoration-none text-dark">Inicio</a>
+                        <a href="Productos.html" class="nav-link-custom text-decoration-none text-dark">Productos</a>
+                        <a href="Nosotros.html" class="nav-link-custom text-decoration-none text-dark">Nosotros</a>
+                        <a href="Donación.html" class="nav-link-custom text-decoration-none text-dark">Donación</a>
+                    </div>
+
+                    <div class="col-12 col-md-4 text-center">
+                        <h1 class="titulo display-5">Aqüae</h1>
+                    </div>
+                       <div class="col-4 d-none d-md-flex justify-content-end align-items-center gap-4 iconos-header">
+                        <a href="carrito.html" class="icono-header carrito-header" title="Carrito">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <path d="M15 18L13 38H35L33 18" stroke="#777" stroke-width="1.5"/>
+                                <path d="M19 18C19 13 21 10 24 10C27 10 29 13 29 18" stroke="#777" stroke-width="1.5"/>
+                                <path d="M14 23C10 22 8 25 10 28C11 30 13 29 15 27" stroke="#ED9CBD" stroke-width="1.5"/>
+                            </svg>
+                            <span id="cart-count" class="badge rounded-pill bg-danger">0</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row d-md-none text-center mt-2 pt-2 border-top border-light">
+                    <div class="col-3"><a href="index.html" class="nav-link-custom text-decoration-none text-dark">Inicio</a></div>
+                    <div class="col-3"><a href="productos.html" class="nav-link-custom text-decoration-none text-dark">Productos</a></div>
+                    <div class="col-3"><a href="Nosotros.html" class="nav-link-custom text-decoration-none text-dark">Nosotros</a></div>
+                    <div class="col-3"><a href="Donación.html" class="nav-link-custom text-decoration-none text-dark">Donación</a></div>
+                </div>
+            </div>
+        </header>
+
+        <main class="container my-5">
+            <section class="text-center py-4 mb-5 rounded" style="background-color: var(--color-verde-claro); color: var(--color-verde-fondo);">
+                <h1 class="titulo" style="color: var(--color-verde-fondo);">Juntos por el Planeta</h1>
+                <p class="lead mt-3 mx-auto" style="max-width: 750px;">
+                    Apoya causas ambientales activas. Elige la fundación que deseas respaldar y contribuye a la restauración de nuestros ecosistemas hídricos y bosques.
+                </p>
+            </section>
+
+            <form id="donationForm">
+                <section class="mb-5">
+                    <h2 class="h4 mb-4" style="color: var(--color-verde-fondo);">1. Selecciona la Causa Ambiental</h2>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="ngo-card selected" onclick="seleccionarFundacion(this, 'Fundación Limpiando Océanos')">
+                                <div class="d-flex align-items-center mb-3">
+                                    <h3 class="h5 m-0">Limpiando Océanos</h3>
+                                </div>
+                                <p class="info-text mb-0">Recolección de microplásticos y restauración de ecosistemas marinos en costas locales.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="ngo-card" onclick="seleccionarFundacion(this, 'Red de Reforestación Nativa')">
+                                <div class="d-flex align-items-center mb-3">
+                                    <h3 class="h5 m-0">Reforestación Nativa</h3>
+                                </div>
+                                <p class="info-text mb-0">Siembra de árboles nativos y protección de cuencas hidrográficas en zonas vulnerables.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="ngo-card" onclick="seleccionarFundacion(this, 'Protección de Páramos y Agua')">
+                                <div class="d-flex align-items-center mb-3">
+                                    <h3 class="h5 m-0">Guardianes del Agua</h3>
+                                </div>
+                                <p class="info-text mb-0">Preservación de páramos y fuentes de agua dulce esenciales para las comunidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="auth-container my-5" style="margin: 0 auto; max-width: 1200px;">
+                    <div class="auth-col">
+                        <h2>2. Selecciona el Monto</h2>
+                        <div class="row g-3 mb-4">
+                            <div class="col-4">
+                                <button type="button" class="amount-btn" onclick="seleccionarMonto(10000, this)">$10.000 COP</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="amount-btn active" onclick="seleccionarMonto(25000, this)">$25.000 COP</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="amount-btn" onclick="seleccionarMonto(50000, this)">$50.000 COP</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customAmount">Otro monto (COP) <span class="required">*</span></label>
+                            <input type="number" id="customAmount" min="5000" placeholder="Ej: 30000" oninput="actualizarMontoPersonalizado(this.value)">
+                        </div>
+
+                        <div class="donation-summary mt-4">
+                            <h4 class="h6 mb-2">Resumen de tu Aporte:</h4>
+                            <p class="m-0"><strong>Causa:</strong> <span id="summaryNGO">Fundación Limpiando Océanos</span></p>
+                            <p class="m-0"><strong>Monto a Donar:</strong> $<span id="summaryAmount">25.000</span> COP</p>
+                        </div>
+                    </div>
+
+                    <div class="auth-col">
+                        <h2>3. Datos del Donante</h2>
+
+                        <div class="form-group">
+                            <label for="donorName">Nombre Completo <span class="required">*</span></label>
+                            <input type="text" id="donorName" placeholder="Tu nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="donorEmail">Correo Electrónico <span class="required">*</span></label>
+                            <input type="email" id="donorEmail" placeholder="correo@ejemplo.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="donorDocument">Documento<span class="required">*</span></label>
+                            <input type="text" id="donorDocument" placeholder="12345678" required>
+                        </div>
+
+                        <div class="form-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="donorUpdates" checked>
+                                Quiero recibir actualizaciones del impacto de mi donación
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-submit">CONFIRMAR Y DONAR AHORA</button>
+                    </div>
+                </section>
+            </form>
+        </main>
+
+        <footer class="footer-aquae pt-5 pb-3 border-top mt-5">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="footer-brand mb-2">Aqüae</h5>
+                        <p class="text-muted-custom">
+                            Belleza natural, piel consciente. Creado con ingredientes botánicos para brindarte una hidratación pura y sostenible.
+                        </p>
+                        <div class="d-flex gap-3 mt-3">
+                            <a href="https://www.instagram.com/aquaecosmetics?stkn=b3loeDdoMjdtcGRj&utm_source=qr" class="social-icon" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8" />
+                                    <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                                    <path d="M16.5 7.5v.01" />
+                                </svg>
+                            </a>
+                            <a href="https://www.tiktok.com/@aquaecosmetics?is_from_webapp=1&sender_device=pc" class="social-icon" aria-label="TikTok">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917" />
+                                </svg>
+                            </a>
+                            <a href="https://w.app/aquae" class="social-icon" aria-label="WhatsApp">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                                    <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="footer-heading">Navegación</h5>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="index.html" class="nav-link-custom text-decoration-none text-dark">Inicio</a></li>
+                            <li><a href="Productos.html" class="nav-link-custom text-decoration-none text-dark">Productos</a></li>
+                            <li><a href="Donación.html" class="nav-link-custom text-decoration-none text-dark">Donación</a></li>
+                            <li><a href="Nosotros.html" class="nav-link-custom text-decoration-none text-dark">Sobre Nosotros</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="footer-heading">Ayuda</h5>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="Preguntas.html" class="nav-link-custom text-decoration-none text-dark">Preguntas Frecuentes</a></li>
+                            <li><a href="Envio.html" class="nav-link-custom text-decoration-none text-dark">Envíos</a></li>
+                            <li><a href="Tyc.html" class="nav-link-custom text-decoration-none text-dark">Términos y condiciones</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr class="mt-5 mb-3 footer-divider">
+
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-12 text-center d-flex align-items-center justify-content-center gap-2">
+                        <span class="small text-muted-custom">&copy; 2026 Aqüae. Todos los derechos reservados.</span>
+                        <span class="small text-muted-custom">| Cuidado consciente para tu piel</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#777" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 10a6 6 0 0 0 -6 -6h-3v2a6 6 0 0 0 6 6h3" />
+                            <path d="M12 14a6 6 0 0 1 6 -6h3v1a6 6 0 0 1 -6 6h-3" />
+                            <path d="M12 20l0 -10" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
